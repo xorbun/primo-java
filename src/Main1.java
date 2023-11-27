@@ -8,7 +8,7 @@ public class Main1
         String[] array1={"ciao ", "a ", "tutti ", "e ", "benvenuti "};
         String nuovaparola1="boh ";
         String[] messaggio =inserisciinarray(array1,nuovaparola1);
-        for(int i=0;i<prova.length;i++)
+        for(int i=0;i<messaggio.length;i++)
         {
             System.out.printf(messaggio[i]);
         }
@@ -20,13 +20,13 @@ public class Main1
         int num1=3;
         int num2=5;
         int prodotto=num1*num2;
-        System.out.printf("il prodotto è "+ prodotto);
+        System.out.printf("il prodotto è"+ " "+ prodotto);
     }
     public static void concatenazione()
     {
         String parola1="ciao ";
         String parola2="a tutti ";
-        System.out.printf(parola1 + parola2);
+        System.out.printf(parola1+ " " + parola2);
     }
     public static String[] inserisciinarray(String[] primoarray, String nuovaparola)
     {

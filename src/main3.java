@@ -5,7 +5,12 @@ public class main3
     public static void main(String[] args)
     {
         perimetro();
-        pariodispari();
+        Scanner input= new Scanner(System.in);
+        System.out.printf("scrivi un numero");
+        int numero= input.nextInt();
+        input.close();
+        int a= pariodispari(numero);
+        System.out.println(a);
         area();
     }
     public static void perimetro()
@@ -15,19 +20,15 @@ public class main3
         int perimetro=((base*2)+(altezza*2));
         System.out.printf("il perimetro del rettangolo è "+ perimetro);
     }
-    public static void pariodispari()
+    public static int pariodispari(int numero1)
     {
-        Scanner input= new Scanner(System.in);
-        System.out.printf("scrivi un numero");
-        int numero= input.nextInt();
-        input.close();
-        if(numero%2==0)
+        if(numero1%2==0)
         {
-            System.out.printf("numero pari");
+            return 0;
         }
         else
         {
-            System.out.printf("numero dispari");
+         return 1;
         }
     }
     public static void area()
