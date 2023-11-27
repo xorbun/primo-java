@@ -11,7 +11,12 @@ public class main3
         input.close();
         int a= pariodispari(numero);
         System.out.println(a);
-        area();
+        int lato1=3;
+        int lato2=5;
+        int lato3=7;
+        double risultato= area(lato1,lato2,lato3);
+        System.out.println("l'area del triangolo è "+ risultato);
+
     }
     public static void perimetro()
     {
@@ -31,13 +36,12 @@ public class main3
          return 1;
         }
     }
-    public static void area()
+    public static double area(int a, int b, int c)
     {
-        int lato1=3;
-        int lato2=5;
-        int lato3=7;
-        int perimetro2=lato1+lato2+lato3;
-        double area=Math.sqrt((perimetro2*(perimetro2-lato1)*(perimetro2-lato2)*(perimetro2*lato3)));
-        System.out.printf("l'area del triangolo è" + area);
+
+        int perimetro2=a+b+c;
+        double area=Math.sqrt((perimetro2*(perimetro2-a)*(perimetro2-b)*(perimetro2*c)));
+        return area;
+
     }
 }

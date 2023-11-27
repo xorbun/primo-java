@@ -14,7 +14,8 @@ public class main2
         input.close();
         System.out.printf("le tre stringhe in ordine di inserimento"+ " " + parola1 + " "+ parola2 +" "+ parola3);
         System.out.printf("le tre stringhe in ordine inverso"+ " " + parola3+ " " + parola2+ " " +parola1);
-      
+        String[] nuovoarray={parola1,parola2,parola3};
+        
 
     }
 }
