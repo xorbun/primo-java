@@ -7,10 +7,10 @@ public class Main1
         concatenazione();
         String[] array1={"ciao ", "a ", "tutti ", "e ", "benvenuti "};
         String nuovaparola1="boh ";
-        String[] prova =inserisciinarray(array1,nuovaparola1);
+        String[] messaggio =inserisciinarray(array1,nuovaparola1);
         for(int i=0;i<prova.length;i++)
         {
-            System.out.printf(prova[i]);
+            System.out.printf(messaggio[i]);
         }
 
 
