@@ -12,8 +12,6 @@ public class Main1
         {
             System.out.printf(messaggio[i]);
         }
-
-
     }
     public static void moltiplicazione()
     {
@@ -30,7 +28,6 @@ public class Main1
     }
     public static String[] inserisciinarray(String[] primoarray, String nuovaparola)
     {
-
         String[] secondoarray=new String[6];
         secondoarray[0] = primoarray[0];
         secondoarray[1] = primoarray[1];
@@ -38,7 +35,6 @@ public class Main1
         secondoarray[3] = primoarray[2];
         secondoarray[4] = primoarray[3];
         secondoarray[5] = primoarray[4];
-
         return secondoarray;
     }
 }

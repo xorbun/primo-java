@@ -12,10 +12,17 @@ public class main2
         System.out.printf("scrivi una terza parola");
         String parola3=input.nextLine();
         input.close();
-        System.out.printf("le tre stringhe in ordine di inserimento"+ " " + parola1 + " "+ parola2 +" "+ parola3);
-        System.out.printf("le tre stringhe in ordine inverso"+ " " + parola3+ " " + parola2+ " " +parola1);
         String[] nuovoarray={parola1,parola2,parola3};
-        
+        for(int i=0;i< nuovoarray.length;i++)
+        {
+            System.out.printf(nuovoarray[i]);
+            System.out.printf(" ");
+        }
+        for(int j=nuovoarray.length-1;j>=0 ;j--)
+        {
+            System.out.println(nuovoarray[j]);
+            System.out.printf(" ");
+        }
 
     }
 }
